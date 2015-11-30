@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+
+<title>FreeLance</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<header id="headDiv">
+	<nav>
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="grid-free">
+				<div class="flogo">
+					<a href="index.html">freelance</a>
+				</div>
+				<div class="fhms">
+					<ul class="fmenu">
+						<li><a href="">Explore</a></li>
+						<li><a href="">Jobs</a></li>
+					</ul>
+					<div class="fsearch">
+						<form class="navbar-form navbar-left" role="search">
+							<div class="input-group">
+						      <input type="text" class="form-control" aria-label="...">
+						      <div class="input-group-btn">
+						        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><div class="sicon"></div></button>
+						        <ul class="dropdown-menu dropdown-menu-right">
+						          <li><a href="#">Action</a></li>
+						          <li><a href="#">Another action</a></li>
+						          <li><a href="#">Something else here</a></li>
+						          <li role="separator" class="divider"></li>
+						          <li><a href="#">Separated link</a></li>
+						        </ul>
+						      </div><!-- /btn-group -->
+						    </div>
+						</form>
+					</div>
+				</div>
+				<div class="fusera_ccount" id="headDown">
+					<div class="hpblk">
+						<div class="logup">Нэвтрэх</div>
+						<!--<div class="dropdown">
+                            <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="droparrow">Нэвтрэх</span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                <li><a href="#passchange" class="waves-effect waves-left modal-trigger">Нууц үг солих</a></li>
+                                <li><a href="/user/copy/index">Дансны хуулга</a></li>
+                                <li><a href="/user/monetize/index">Мөнгөжүүлэх</a></li>
+                                <li><a onclick="signOut()" href="/login/logout" id="logout">Гарах</a></li>
+                            </ul>
+                        </div>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+</header>
+<div id="headDownblk">
+	<div class="grid-free">
+		<div class="logupblock">
+			<div class="row">
+				<div class="col-md-6 headblkl">
+					<div class="signupblk sinl">
+						<div class="row">
+							<label>Log in using your Facebook, Windows, Live, Google or Yahoo! Account</label>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<button class="socialbtn fb"><div class="sfb"></div></button>
+							</div>
+							<div class="col-md-4">
+								<button class="socialbtn twt"><div class="stwt"></div></button>
+							</div>
+							<div class="col-md-4">
+								<button class="socialbtn lin"><div class="slin"></div></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 headblkr">
+					<div class="signupblk" id="loginBlk">
+						<form action="" method="POST">
+							<div class="row">
+								<input type="email" name="firstname" class="usern col-md-12" placeholder="Нэвтрэх нэр" />
+							</div>
+							<div class="row">
+								<input type="password" name="password" class="passin col-md-12" placeholder="Нууц үг" />
+							</div>
+							<div class="row">
+								<button class="btn signupbtn col-md-12">Нэвтрэх</button>
+							</div>
+							<div class="row">
+								<label class="registerBtn" id="regBtn"><a>Бүртгүүлэх</a></label>
+							</div>
+							<div class="row">
+								<label class="singupLabel"><a href="">Нууц үг мартсан ?</a></label>
+							</div>
+						</form>
+					</div>
+					<div class="signupblk" id="registerBlk" style="display: none;">
+						<form action="" method="POST">
+							<div class="row">
+								<input type="email" name="firstname" class="usern col-md-12" placeholder="И-мэйл хаяг" />
+							</div>
+							<div class="row">
+								<input type="password" name="password" class="regpass col-md-12" placeholder="Нууц үг" />
+							</div>
+							<div class="row">
+								<input type="text" name="username" class="passin col-md-12" placeholder="Нэвтрэх нэр" />
+							</div>
+							<div class="row">
+								<button class="btn signupbtn col-md-12">Бүртгүүлэх</button>
+							</div>
+							<div class="row">
+								<label class="singupLabel"><a>Нэвтрэх</a></label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="c_search_result">
+	<div class="c_guide_wrapper">
+		<div class="c_guide_slider">
+			<ul class="c_guide_container">
+				<li>
+					<a href="">
+						<div class="c_guide_mask"></div>
+						<img src="images/keywords/keybg.jpg" height="100%">
+						<span class="c_guide_text">Interior</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="c_guide_mask"></div>
+						<img src="images/keywords/keybg.jpg" height="100%">
+						<span class="c_guide_text">Interior Interior Interior</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="c_guide_mask"></div>
+						<img src="images/keywords/keybg.jpg" height="100%">
+						<span class="c_guide_text">Interior</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="c_guide_mask"></div>
+						<img src="images/keywords/keybg.jpg" height="100%">
+						<span class="c_guide_text">Interior</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="c_guide_mask"></div>
+						<img src="images/keywords/keybg.jpg" height="100%">
+						<span class="c_guide_text">Interior</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="c_guide_mask"></div>
+						<img src="images/keywords/keybg.jpg" height="100%">
+						<span class="c_guide_text">Interior</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="c_guide_mask"></div>
+						<img src="images/keywords/keybg.jpg" height="100%">
+						<span class="c_guide_text">Interior</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="c_guide_mask"></div>
+						<img src="images/keywords/keybg.jpg" height="100%">
+						<span class="c_guide_text">Interior</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="c_guide_mask"></div>
+						<img src="images/keywords/keybg.jpg" height="100%">
+						<span class="c_guide_text">Interior</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="c_guide_mask"></div>
+						<img src="images/keywords/keybg.jpg" height="100%">
+						<span class="c_guide_text">Interior</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="c_guide_mask"></div>
+						<img src="images/keywords/keybg.jpg" height="100%">
+						<span class="c_guide_text">Interior</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<a href="">Prev</a>
+		<a href="">Next</a>
+	</div>
+</div>
+<div class="c_tools_l">
+	<div class="c_tools_l_1">
+		<div class="grid-free">
+			<div class="c_t_i">
+				<div class="row">
+					<div class="dropdown">
+						<button class="catlistbtn" type="button" data-toggle="dropdown">Төрөл<span class="carda"></span></button>
+						<ul class="dropdown-menu">
+							<li><a href="#">HTML</a></li>
+							<li><a href="#">CSS</a></li>
+							<li><a href="#">JavaScript</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="c_t_i">
+				<div class="row">
+					<div class="dropdown">
+						<button class="catlistbtn" type="button" data-toggle="dropdown">Ангилал<span class="carda"></span></button>
+						<ul class="dropdown-menu">
+							<li><a href="#">HTML</a></li>
+							<li><a href="#">CSS</a></li>
+							<li><a href="#">JavaScript</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="c_t_i">
+				<div class="row">
+					<div class="dropdown">
+						<button class="catlistbtn" type="button" data-toggle="dropdown" id="filterId">Filter<span class="carda"></span></button>
+						<div class="dropdown-menu">
+							<div class="catlisttit">Browse</div>
+							<ul>
+								<li><a href="#">Их үзсэн</a></li>
+								<li><a href="#">Их таалагдсан</a></li>
+								<li><a href="#">Их сэтгэгдэлтэй</a></li>
+								<li><a href="#">Сүүлд нэмэгдсэн</a></li>
+							</ul>
+							<div class="catlisttit">Time</div>
+							<ul>
+								<li><a href="#">Өнөөдөр</a></li>
+								<li><a href="#">Энэ 7 хоног</a></li>
+								<li><a href="#">Энэ сар</a></li>
+								<li><a href="#">Энэ жил</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="f_content_wrap">
+	<div id="f_content_m" class="grid-free">
+		<div id="fmcbl">
+			<div class="items fl-project-cover">
+				<div class="fl-item-img">
+					<img src="images/items/1.jpg" height="100%" alt="" />
+				</div>
+				<div class="fl-info-stats">
+					<div class="fl-c-info">
+						<div class="fl-c-name">
+							<a href="">Wendigo</a>
+						</div>
+						<div class="fl-c-by-wrap">
+							<div class="fl-c-by-link">
+								<span>by</span>
+								<a href="" class="fl-s-owner-l">
+									<span class="js-mini-profile">VLADIMIR stankovic</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="fl-stat-f-wrap">
+						<div class="fl-cover-stat-wrap">
+							<span class="fl-cover-stat cover-stat-views">14460</span>
+							<span class="fl-cover-stat cover-stat-appreciations">840</span>
+							<div class="featured tooltipi-container">sad</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="items fl-project-cover video">
+				<div class="fl-item-img">
+					<img src="images/items/1.jpg" height="100%" alt="" />
+				</div>
+				<div class="fl-info-stats">
+					<div class="fl-c-info">
+						<div class="fl-c-name">
+							<a href="">Wendigo</a>
+						</div>
+						<div class="fl-c-by-wrap">
+							<div class="fl-c-by-link">
+								<span>by</span>
+								<a href="" class="fl-s-owner-l">
+									<span class="js-mini-profile">VLADIMIR stankovic</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="fl-stat-f-wrap">
+						<div class="fl-cover-stat-wrap">
+							<span class="fl-cover-stat cover-stat-views">14460</span>
+							<span class="fl-cover-stat cover-stat-appreciations">840</span>
+							<div class="featured tooltipi-container">sad</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="items fl-project-cover music">
+				<div class="fl-item-img">
+					<img src="images/items/1.jpg" height="100%" alt="" />
+				</div>
+				<div class="fl-info-stats">
+					<div class="fl-c-info">
+						<div class="fl-c-name">
+							<a href="">Wendigo</a>
+						</div>
+						<div class="fl-c-by-wrap">
+							<div class="fl-c-by-link">
+								<span>by</span>
+								<a href="" class="fl-s-owner-l">
+									<span class="js-mini-profile">VLADIMIR stankovic</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="fl-stat-f-wrap">
+						<div class="fl-cover-stat-wrap">
+							<span class="fl-cover-stat cover-stat-views">14460</span>
+							<span class="fl-cover-stat cover-stat-appreciations">840</span>
+							<div class="featured tooltipi-container">sad</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="items fl-project-cover music">
+				<div class="fl-item-img">
+					<img src="images/items/1.jpg" height="100%" alt="" />
+				</div>
+				<div class="fl-info-stats">
+					<div class="fl-c-info">
+						<div class="fl-c-name">
+							<a href="">Wendigo</a>
+						</div>
+						<div class="fl-c-by-wrap">
+							<div class="fl-c-by-link">
+								<span>by</span>
+								<a href="" class="fl-s-owner-l">
+									<span class="js-mini-profile">VLADIMIR stankovic</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="fl-stat-f-wrap">
+						<div class="fl-cover-stat-wrap">
+							<span class="fl-cover-stat cover-stat-views">14460</span>
+							<span class="fl-cover-stat cover-stat-appreciations">840</span>
+							<div class="featured tooltipi-container">sad</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="items fl-project-cover">
+				<div class="fl-item-img">
+					<img src="images/items/1.jpg" height="100%" alt="" />
+				</div>
+				<div class="fl-info-stats">
+					<div class="fl-c-info">
+						<div class="fl-c-name">
+							<a href="">Wendigo</a>
+						</div>
+						<div class="fl-c-by-wrap">
+							<div class="fl-c-by-link">
+								<span>by</span>
+								<a href="" class="fl-s-owner-l">
+									<span class="js-mini-profile">VLADIMIR stankovic</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="fl-stat-f-wrap">
+						<div class="fl-cover-stat-wrap">
+							<span class="fl-cover-stat cover-stat-views">14460</span>
+							<span class="fl-cover-stat cover-stat-appreciations">840</span>
+							<div class="featured tooltipi-container">sad</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="items fl-project-cover video">
+				<div class="fl-item-img">
+					<img src="images/items/1.jpg" height="100%" alt="" />
+				</div>
+				<div class="fl-info-stats">
+					<div class="fl-c-info">
+						<div class="fl-c-name">
+							<a href="">Wendigo</a>
+						</div>
+						<div class="fl-c-by-wrap">
+							<div class="fl-c-by-link">
+								<span>by</span>
+								<a href="" class="fl-s-owner-l">
+									<span class="js-mini-profile">VLADIMIR stankovic</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="fl-stat-f-wrap">
+						<div class="fl-cover-stat-wrap">
+							<span class="fl-cover-stat cover-stat-views">14460</span>
+							<span class="fl-cover-stat cover-stat-appreciations">840</span>
+							<div class="featured tooltipi-container">sad</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="items fl-project-cover music">
+				<div class="fl-item-img">
+					<img src="images/items/1.jpg" height="100%" alt="" />
+				</div>
+				<div class="fl-info-stats">
+					<div class="fl-c-info">
+						<div class="fl-c-name">
+							<a href="">Wendigo</a>
+						</div>
+						<div class="fl-c-by-wrap">
+							<div class="fl-c-by-link">
+								<span>by</span>
+								<a href="" class="fl-s-owner-l">
+									<span class="js-mini-profile">VLADIMIR stankovic</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="fl-stat-f-wrap">
+						<div class="fl-cover-stat-wrap">
+							<span class="fl-cover-stat cover-stat-views">14460</span>
+							<span class="fl-cover-stat cover-stat-appreciations">840</span>
+							<div class="featured tooltipi-container">sad</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="items fl-project-cover music">
+				<div class="fl-item-img">
+					<img src="images/items/1.jpg" height="100%" alt="" />
+				</div>
+				<div class="fl-info-stats">
+					<div class="fl-c-info">
+						<div class="fl-c-name">
+							<a href="">Wendigo</a>
+						</div>
+						<div class="fl-c-by-wrap">
+							<div class="fl-c-by-link">
+								<span>by</span>
+								<a href="" class="fl-s-owner-l">
+									<span class="js-mini-profile">VLADIMIR stankovic</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="fl-stat-f-wrap">
+						<div class="fl-cover-stat-wrap">
+							<span class="fl-cover-stat cover-stat-views">14460</span>
+							<span class="fl-cover-stat cover-stat-appreciations">840</span>
+							<div class="featured tooltipi-container">sad</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="fmcbr">
+			<div class="">Popular Creative Fields</div>
+			<ul class="list-links">
+				<li><a href="">Graphic Design</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+$(".nav a").on("click", function(){
+   $(".nav").find(".active").removeClass("active");
+   $(this).parent().addClass("active");
+});
+$(document).ready(function(){
+    $('ul.tabs').tabs('select_tab', 'tab_id');
+    $('#filterId').click(function(e) {
+   e.stopPropagation();
+);
+  });
+</script>
+</html>
