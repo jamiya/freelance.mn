@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Portfolio_id: 
+  Content_id: 
+
+two:
+  Portfolio_id: 
+  Content_id: 

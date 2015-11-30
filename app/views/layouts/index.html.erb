@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<%= stylesheet_link_tag "bootstrap" %>
+<%= stylesheet_link_tag "style" %>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<%= csrf_meta_tags %>
+<title>FreeLance</title>
+</head>
+<body>
+  <%= yield :layout %>
+</body>
+<%= javascript_include_tag 'jquery' %>
+<%= javascript_include_tag 'bootstrap' %>
+<%= javascript_include_tag 'main' %>
+<script type="text/javascript">
+$(".nav a").on("click", function(){
+   $(".nav").find(".active").removeClass("active");
+   $(this).parent().addClass("active");
+});
+$(document).ready(function(){
+    // $('ul.tabs').tabs('select_tab', 'tab_id');
+  });
+</script>
+</html>

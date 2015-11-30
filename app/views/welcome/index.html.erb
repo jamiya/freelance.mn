@@ -1,0 +1,285 @@
+<header>
+  <nav>
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="grid-free">
+        <div class="flogo">
+          <a href="index.html">FreeLance</a>
+        </div>
+        <div class="fhms">
+          <ul class="fmenu">
+            <li>
+              <a href="">Explore</a>
+            </li>
+            <li>
+              <a href="">Jobs</a>
+            </li>
+          </ul>
+          <div class="fsearch">
+            <form class="navbar-form navbar-left" role="search">
+              <div class="input-group">
+                <input aria-label="..." class="form-control" type="text">
+                <div class="input-group-btn">
+                  <button aria-expanded="false" aria-haspopup="true" class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+                    <div class="sicon"></div>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li>
+                      <a href="#">Action</a>
+                    </li>
+                    <li>
+                      <a href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a href="#">Something else here</a>
+                    </li>
+                    <li class="divider" role="separator"></li>
+                    <li>
+                      <a href="#">Separated link</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- /btn-group -->
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="fusera_ccount" id="headDown">
+          <div class="hpblk">
+            <div class="logup">Нэвтрэх</div>
+            <!--<div class="dropdown">
+                            <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="droparrow">Нэвтрэх</span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                <li><a href="#passchange" class="waves-effect waves-left modal-trigger">Нууц үг солих</a></li>
+                                <li><a href="/user/copy/index">Дансны хуулга</a></li>
+                                <li><a href="/user/monetize/index">Мөнгөжүүлэх</a></li>
+                                <li><a onclick="signOut()" href="/login/logout" id="logout">Гарах</a></li>
+                            </ul>
+                        </div>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div id="headDownblk">
+  <div class="grid-free">
+    <div class="logupblock">
+      <div class="row">
+        <div class="col-md-6 headblkl">
+          <div class="signupblk sinl">
+            <div class="row">
+              <label>Log in using your Facebook, Windows, Live, Google or Yahoo! Account</label>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <button class="socialbtn">Facebook</button>
+              </div>
+              <div class="col-md-4">
+                <button class="socialbtn">Twitter</button>
+              </div>
+              <div class="col-md-4">
+                <button class="socialbtn">LinkedIn</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 headblkr">
+          <div class="signupblk" id="loginBlk">
+            <form action="" method="POST">
+              <div class="row">
+                <input class="usern col-md-12" name="firstname" placeholder="Нэвтрэх нэр" type="email"/>
+              </div>
+              <div class="row">
+                <input class="passin col-md-12" name="password" placeholder="Нууц үг" type="password"/>
+              </div>
+              <div class="row">
+                <button class="btn signupbtn col-md-12">Нэвтрэх</button>
+              </div>
+              <div class="row">
+                <label class="registerBtn" id="regBtn">
+                  <a>Бүртгүүлэх</a>
+                </label>
+              </div>
+              <div class="row">
+                <label class="singupLabel">
+                  <a href="">Нууц үг мартсан ?</a>
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="signupblk" id="registerBlk" style="display: none;">
+            <form action="" method="POST">
+              <div class="row">
+                <input class="usern col-md-12" name="firstname" placeholder="И-мэйл хаяг" type="email"/>
+              </div>
+              <div class="row">
+                <input class="regpass col-md-12" name="password" placeholder="Нууц үг" type="password"/>
+              </div>
+              <div class="row">
+                <input class="passin col-md-12" name="username" placeholder="Нэвтрэх нэр" type="text"/>
+              </div>
+              <div class="row">
+                <button class="btn signupbtn col-md-12">Бүртгүүлэх</button>
+              </div>
+              <div class="row">
+                <label class="singupLabel">
+                  <a>Нэвтрэх</a>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="headclose">X</div>
+  </div>
+</div>
+<div class="sliderFree">
+  <div class="carousel slide" data-ride="carousel" id="myCarousel">
+    <ol class="carousel-indicators">
+      <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+      <li data-slide-to="1" data-target="#myCarousel"></li>
+      <li data-slide-to="2" data-target="#myCarousel"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="item active">
+        <%= image_tag("5.jpg",style: "width:100%",alt: "First slide") %>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Slide 1</h1>
+            <p>Aenean a rutrum nulla. Vestibulum a arcu at nisi tristique pretium.</p>
+            <p>
+              <a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag("2.jpg",style: "width:100%",alt: "Second slide") %>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Slide 2</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae egestas purus.
+            </p>
+            <p>
+              <a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <%= image_tag("3.jpg",style: "width:100%",alt: "Third slide") %>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Slide 3</h1>
+            <p>Donec sit amet mi imperdiet mauris viverra accumsan ut at libero.</p>
+            <p>
+              <a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="left carousel-control" data-slide="prev" href="#myCarousel">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" data-slide="next" href="#myCarousel">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+</div>
+<div class="c_tools_l">
+  <div class="c_tools_l_1">
+    <div class="grid-free">
+      <div class="c_t_i">
+        <div class="row">
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button">Dropdown Example
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">HTML</a>
+              </li>
+              <li>
+                <a href="#">CSS</a>
+              </li>
+              <li>
+                <a href="#">JavaScript</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="c_t_i">
+        <div class="row">
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button">Dropdown Example
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">HTML</a>
+              </li>
+              <li>
+                <a href="#">CSS</a>
+              </li>
+              <li>
+                <a href="#">JavaScript</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="c_t_i">
+        <div class="row">
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button">Dropdown Example
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">HTML</a>
+              </li>
+              <li>
+                <a href="#">CSS</a>
+              </li>
+              <li>
+                <a href="#">JavaScript</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="f_content_wrap">
+  <div class="grid-free" id="f_content_m">
+    <div id="fmcbl">
+      <div class="items fl-project-cover">
+        <div class="fl-item-img">
+					<%= image_tag("items/1.jpg",style: "width:100%",alt: "") %>
+        </div>
+        <div class="fl-info-stats">
+          <div class="fl-c-info">
+            <div class="fl-c-name">
+              <a href="">Wendigo</a>
+            </div>
+            <div class="fl-c-by-wrap">
+              <div class="fl-c-by-link">
+                <span>by</span>
+                <a class="fl-s-owner-l" href="">
+                  <span class="js-mini-profile">VLADIMIR stankovic</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="fmcbr"></div>
+  </div>
+</div>
